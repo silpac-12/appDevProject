@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".AppApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:theme="@style/Theme.AppDevelopmentProject"
         tools:targetApi="31">
         <activity
@@ -18,13 +19,11 @@
             android:label="@string/title_activity_shopping"
             android:theme="@style/Theme.AppDevelopmentProject" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.LoginRegisterActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.AppDevelopmentProject">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
